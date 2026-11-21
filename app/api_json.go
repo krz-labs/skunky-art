@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"regexp"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // The API deliberately serves its own shapes rather than devianter's structs.

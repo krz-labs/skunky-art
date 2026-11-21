@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // withAvatarCache turns the media cache on over a temporary directory and

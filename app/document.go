@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // docNode is one node of the document format DeviantArt's current editor

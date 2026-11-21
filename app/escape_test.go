@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 var loadTemplatesOnce sync.Once

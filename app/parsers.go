@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 	"golang.org/x/net/html"
 )
 

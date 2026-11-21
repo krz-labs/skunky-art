@@ -3,7 +3,7 @@ module skunkyart
 go 1.26.10
 
 require (
-	github.com/krazywarez/devianter v0.3.4
+	github.com/krz-labs/devianter v0.3.5
 	golang.org/x/net v0.63.0
 )
 

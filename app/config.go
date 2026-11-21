@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // Release carries the build's version and description, set at link time and

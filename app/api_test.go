@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // fullviewDeviation returns a deviation whose media assembles into a non-empty

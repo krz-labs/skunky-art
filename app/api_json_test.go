@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // TestVisibleDeviationMatchesTheListingRules pins the single predicate the HTML

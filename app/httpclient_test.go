@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // stubTransport records how many requests reached it and returns an empty 200.

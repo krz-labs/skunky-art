@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // atomFeed is the subset of an Atom document the tests check. Decoding through

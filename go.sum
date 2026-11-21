@@ -1,5 +1,5 @@
-github.com/krazywarez/devianter v0.3.4 h1:byeaLiH1jMi/0HvyqDBwg02p18NPIKl/KbmGEkWSi6c=
-github.com/krazywarez/devianter v0.3.4/go.mod h1:d+0cnLQqQNoiuVCuCMxvox3tLNj3n2vEWv7bqVn+2s8=
+github.com/krz-labs/devianter v0.3.5 h1:lpw8HmFvk/bH7l6Of/0tthR3d2xEuQAVnp+idL1R+ao=
+github.com/krz-labs/devianter v0.3.5/go.mod h1:JKXH42AtaCjFBPk5jokNxyGrfU8U3VOud2q4lqTW2Og=
 golang.org/x/net v0.63.0 h1:HCoTmNh9EpD1PpK8gBNFY4gcTY4N+KQEO8ylfIKqFJ0=
 golang.org/x/net v0.63.0/go.mod h1:15JLg3IX1bLjHK264EZQEbIpTiR/KVLuo9CTRWd0pig=
 golang.org/x/sync v0.25.0 h1:dJnifr0nMV8/SBnBvdo4eSGGnrc3O4FFx6IqvtLcmRs=

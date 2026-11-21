@@ -69,7 +69,7 @@ stanza.
 
 * where things live
 the repository, issues and merge requests are on gitbay
-(https://gitbay.org/krz/skunky-art). github.com/krazywarez/skunky-art is a
+(https://gitbay.org/krz/skunky-art). github.com/krz-labs/skunky-art is a
 push mirror that exists to build the container image.
 
 issues opened on github may not be noticed immediately - create your issues on gitbay or reach
@@ -80,7 +80,7 @@ multi-arch images (~linux/amd64~, ~linux/arm64~) publish to ghcr on every releas
 tag, built by the github mirror's workflow:
 
 #+begin_src sh
-docker pull ghcr.io/krazywarez/skunky-art:latest
+docker pull ghcr.io/krz-labs/skunky-art:latest
 #+end_src
 
 each release is tagged 1.3.3, 1.3, 1, and latest. pin an exact version for

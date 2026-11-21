@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 func TestProxiedMediaURLCarriesTokenAndFilenameAsQuery(t *testing.T) {

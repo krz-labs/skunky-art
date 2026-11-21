@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // aiListDevs returns one human-made and one AI-flagged deviation, each with a

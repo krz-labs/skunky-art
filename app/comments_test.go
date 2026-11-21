@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/krazywarez/devianter"
+	"github.com/krz-labs/devianter"
 )
 
 // withCommentSeams scripts the deviation and comment fetches and counts the
