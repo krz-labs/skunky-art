@@ -28,7 +28,7 @@ dist:
 	  os=$${p%/*}; arch=$${p#*/}; dir=dist/skunkyart-$(VERSION)-$$os-$$arch; \
 	  mkdir -p $$dir; \
 	  CGO_ENABLED=0 GOOS=$$os GOARCH=$$arch go build $(GOFLAGS) -tags embed -ldflags "$(LDFLAGS)" -o $$dir/skunkyart .; \
-	  cp config.example.json README.org SETUP.md API.md LICENSE $$dir/; \
+	  cp config.example.json README.md SETUP.md API.md LICENSE $$dir/; \
 	  cp -r services $$dir/; \
 	  tar -C dist -czf $$dir.tar.gz $$(basename $$dir); \
 	  rm -r $$dir; \
