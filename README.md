@@ -54,7 +54,7 @@ All of these are tunable; see [SETUP.md](SETUP.md).
 See [INSTANCES.md](INSTANCES.md). CI checks every listed instance daily
 (`scripts/check-instances.py`) and fails if one is unreachable.
 
-To list your instance, open a merge request that updates
+To list your instance, open a pull request that updates
 [instances.json](instances.json) and [INSTANCES.md](INSTANCES.md), or open an
 issue. Running `skunkyart --add-instance` updates both files for you.
 
@@ -134,13 +134,8 @@ CI runs the tests and linter on every push. Planned work is tracked in
 
 ## Contributing
 
-The canonical repository, issue tracker and merge requests are on
-[gitbay.org/krz/skunky-art](https://gitbay.org/krz/skunky-art).
-[github.com/krz-labs/skunky-art](https://github.com/krz-labs/skunky-art) is a
-push mirror used to build container images and releases.
-
-Please open issues on gitbay. Issues opened on GitHub may not be seen right
-away; if one goes unanswered, reach out directly.
+The repository, issue tracker and pull requests are on
+[github.com/krz-labs/skunky-art](https://github.com/krz-labs/skunky-art).
 
 ## License
 

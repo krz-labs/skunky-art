@@ -1,0 +1,54 @@
+# build, test and lint run on pushes to main and on pull requests.
+# instances checks every listed instance daily, so INSTANCES.md does not keep
+# dead links; run it by hand with workflow_dispatch.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
+        with:
+          go-version-file: go.mod
+      - run: go build ./...
+      - run: go vet ./...
+
+  test:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
+        with:
+          go-version-file: go.mod
+      - run: go test ./... -count=1 -race -timeout 10m
+
+  lint:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
+        with:
+          go-version-file: go.mod
+      - run: go run github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.14.0 run ./...
+
+  instances:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - run: python3 scripts/check-instances.py
